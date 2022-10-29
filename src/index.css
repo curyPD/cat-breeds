@@ -63,6 +63,21 @@ h1 {
     display: block;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 352px);
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
 .country-tag {
     display: inline-block;
     font-size: 12px;

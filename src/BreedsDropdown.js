@@ -14,21 +14,19 @@ function BreedsDropdown({ breedId, setBreedId, breeds }) {
     const handleSelect = (event) => setBreedId(event.target.value);
 
     return (
-        <>
-            <div className="select-box">
-                <label className="select-label" htmlFor="breed">
-                    Breeds
-                </label>
-                <select
-                    name="breed"
-                    value={breedId}
-                    onChange={handleSelect}
-                    className="select-field"
-                >
-                    {breedOptions}
-                </select>
-            </div>
-        </>
+        <div className="select-box">
+            <label className="select-label" htmlFor="breed">
+                Breeds
+            </label>
+            <select
+                name="breed"
+                value={breedId}
+                onChange={handleSelect}
+                className="select-field"
+            >
+                {breedOptions}
+            </select>
+        </div>
     );
 }
 

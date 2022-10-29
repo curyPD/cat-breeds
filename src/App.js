@@ -12,6 +12,7 @@ export default function App() {
 
     const selectedBreed = breeds.find((breed) => breed.id === breedId);
 
+    // Set first option as initial
     useEffect(() => {
         if (breeds[0]?.id) setBreedId(breeds[0].id);
     }, [breeds[0]?.id]);
