@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #555;
+    line-height: 1.5;
+}
+
+.App {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 12px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.325;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 42px;
+}
+
+.select-box {
+    width: 70%;
+    /* margin: 0 auto; */
+    margin-bottom: 24px;
+}
+
+.select-field {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #aaa;
+    color: #444;
+    padding: 3px 0;
+}
+
+.select-label {
+    color: rgb(41, 83, 200);
+    font-size: 12px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.cat-image {
+    max-width: 100%;
+    border-radius: 11px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.country-tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    padding-right: 12px;
+    border-radius: 9999px;
+    background-color: #eee;
+    margin-bottom: 16px;
+    color: #444;
+}
+
+.country-tag > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.country-tag img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cat-name {
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.cat-temperament {
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+}
+
+.cat-description {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.wiki-link,
+.wiki-link:link,
+.wiki-link:visited {
+    display: inline-block;
+    color: rgb(41, 83, 200);
 }
